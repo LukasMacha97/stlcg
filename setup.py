@@ -12,7 +12,12 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/StanfordASL/stlcg",
-    packages=setuptools.find_packages(),
+    packages=['stlcg'],
+    install_requires=[
+        'torch',
+        'numpy==1.24.4',
+        'graphviz',
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
